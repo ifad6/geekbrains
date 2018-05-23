@@ -4,7 +4,7 @@ html, body { width: 100%; height: 100%; }
 h2 { text-align: center; font-size: 30px; font-weight: 700; margin-bottom: 7px; }
 p.subline { text-align: center; font-size: 14px; color: #9f9f9f; font-weight: 400; }
 
-.Page { font-family: Lato, Arial; }
+.Page { font-family: Lato, Arial; display: flex; flex-direction: column; justify-content: space-between; }
 .Page__wrap { width: 100%; background: #FCFCFC; }
 .Page__container { width: 1140px; margin: 0 auto; }
 
@@ -19,14 +19,7 @@ p.subline { text-align: center; font-size: 14px; color: #9f9f9f; font-weight: 40
 
 .SearchForm {  }
 .SearchForm form { white-space: nowrap; }
-.SearchForm__browse {
-	width: 87px; height: 38px; border-radius: 3px 0 0 3px; border: 1px solid #e6e6e6;
-	cursor: pointer; color: #222; font-size: 14px; outline: none;
-	background: -webkit-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
-	background: -moz-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
-	background: -o-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
-	background: -ms-linear-gradient(-90deg, #f9f9f9 0%, #f5f5f5 100%);
-	background: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
+.SearchForm__browse { width: 87px; height: 38px; border-radius: 3px 0 0 3px; border: 1px solid #e6e6e6; cursor: pointer; color: #222; font-size: 14px; outline: none; background: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%);
 }
 .SearchForm__browse i { color: #838383; }
 .SearchForm input { width: 260px; height: 38px; border: 1px solid #e6e6e6; background: #FCFCFC; padding: 0 17px; margin-left: -10px; outline: none; }
@@ -61,17 +54,52 @@ p.subline { text-align: center; font-size: 14px; color: #9f9f9f; font-weight: 40
 .Banners__sticker { background: #FFF; position: absolute; padding: 16px 19px; left: 0; top: 26px; color: #222; font-size: 18px; font-weight: 900; }
 .Banners__sticker span { color:  #f16d7f; font-size: 30px; font-weight: 900; }
 
+
 .Items {  }
 .Items__container {  }
+
+.Items__list { margin: 60px 0; display: flex; justify-content: space-between; flex-wrap: wrap; }
+
 .Items__item { width: 263px; height: 364px; margin-bottom: 39px; position: relative; }
 .Items__item:hover { box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16); }
+
 .Items__item a { text-transform: uppercase; text-decoration: none; }
-.Items__list { margin: 60px 0; display: flex; justify-content: space-between; flex-wrap: wrap; }
 .Items__img { margin-bottom: 12px; }
 .Items__name { color: #222; font-size: 13px; font-weight: 400; margin: 0 0 12px 15px; }
 .Items__price { color: #f16d7f; font-size: 16px; font-weight: 700; margin: 0 0 12px 15px; }
+
 .Items__add2cart { background: rgba(58, 56, 56, 0.83); position: absolute; top: 0; left: 0; width: 263px; height: 281px; z-index: 5; visibility: hidden; display: flex; justify-content: center; align-items: center; z-index: 9999; }
 .Items__add2cart button { border: 1px solid #FFF; background: none; color: #fff; font-size: 13px; font-weight: 700; width: 123px; height: 39px; display: flex; align-items: center; justify-content: center; font-family: Lato, Arial; cursor: pointer; }
 .Items__add2cart button img { color: #fff; width: 23px; height: 22px; margin-right: 3px; }
 .Items__item:hover .Items__add2cart { visibility: visible; }
-.Items__link { display: block; margin: 0 auto; background: #f16d7f; width: 212px; height: 20px; color: #fff; font-size: 16px; font-weight: 400; text-decoration: none; padding: 14px 0; text-align: center; }
+
+.Items__link { display: block; width: 212px; padding: 14px 0; margin: 0 auto; background: #f16d7f; color: #fff; font-size: 16px; font-weight: 400; text-decoration: none; text-align: center; }
+.Items__link:hover { background: #f98797; }
+
+
+.Advantages { padding: 113px 0 97px 0; }
+.Advantages__container { background: #222224; display: flex; justify-content: space-between; }
+
+.Advantages__banner { position: relative; }
+.Advantages__banner:before {content: ""; position:absolute; width: 100%; height: 100%; background: rgba(0,0,0,0.2);}
+
+.Advantages__sticker { position: absolute; top: 146px; left: 39px; font-size: 54px; font-weight: 700; color: #FFF; }
+.Advantages__sticker span { color: #f16d7f; }
+
+.Advantages__advantage { display: flex; justify-content: space-between; align-items: flex-start; margin: 48px 43px 0 36px; }
+.Advantages__advantage img { margin-right: 33px; }
+.Advantages__advantage h4 { font-size: 20px; font-weight: 700; color: #fbfbfb; margin-bottom: 17px; }
+.Advantages__advantage p { font-size: 14px; font-weight: 300; color: #fbfbfb; line-height: 24px; }
+
+.Footer { background: #f2f2f2 url('footer/subscribe_background.jpg'); }
+.Footer:before {content: ""; position:absolute; width: 100%; height: 100%; background: rgba(255,255,255,0.3);}
+.Footer__container { height: 100%; }
+
+.Footer__Subscribe { height: 438px; display: flex; justify-content: space-between; z-index: 10; }
+.Subscribe__recomendation { width: 50%; height: 100%; border-right: 1px solid #FFF; }
+.Subcribe__form { width: 50%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center; z-index: 10; }
+.Subcribe__form h4 { font-size: 24px; font-weight: 400; text-align: center; line-height: 24px; margin-bottom: 35px; }
+.Subcribe__form h4 span { font-size: 14px; }
+.Subcribe__form input { width: 211px; height: 46px; padding-left: 23px; background: #e1e1e1; border: 0 none; border-radius: 23px 0 0 23px; outline: none; }
+.Subcribe__form button { width: 104px; height: 46px; background: #f16d7f; border: 0 none; border-radius: 0 23px 23px 0; color: #FFF; font-size: 14px; outline: none; }
+.Subcribe__form button:hover { background: #f98797; cursor: pointer; }
