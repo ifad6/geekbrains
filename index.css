@@ -28,8 +28,8 @@ p.subline { text-align: center; font-size: 14px; color: #9f9f9f; font-weight: 40
 
 .CartWidget { display: flex; align-items: center; }
 .CartWidget img { margin-right: 26px; }
-.CartWidget button { background: #f16d7f; width: 130px; height: 38px; border: 0 none; color: #FFF; font-size: 15px; }
-.CartWidget button:hover { background: #f98797; cursor: pointer; }
+.CartWidget a { display: flex; text-decoration: none; background: #f16d7f; width: 130px; height: 38px; color: #FFF; font-size: 15px; justify-content: center; align-items: center; }
+.CartWidget a:hover { background: #f98797; cursor: pointer; }
 
 
 .MainMenu__container { height: 50px; display: flex; align-items: center; }
@@ -45,13 +45,9 @@ p.subline { text-align: center; font-size: 14px; color: #9f9f9f; font-weight: 40
 .Slider__text span { font-size: 40px; }
 .Slider__text span span { color: #f16d7f; }
 
-.Banners { padding: 98px 0; height: 823px; }
-.Banners__container { position: relative; height: 100%; }
-.Banners__banner { position: absolute; }
-.Banners__banner_1 { top: 0; left: 0; }
-.Banners__banner_2 { top: 0; right: 0; }
-.Banners__banner_3 { bottom: 0; left: 0; }
-.Banners__banner_4 { bottom: 0; right: 0; }
+.Banners { padding: 98px 0; width: 100%; }
+.Banners__container { display: flex; justify-content: space-between; height: 100%; }
+.Banners__banner { margin-bottom: 16px; position: relative; }
 .Banners__sticker { background: #FFF; position: absolute; padding: 16px 19px; left: 0; top: 26px; color: #222; font-size: 18px; font-weight: 900; }
 .Banners__sticker span { color:  #f16d7f; font-size: 30px; font-weight: 900; }
 
@@ -92,7 +88,7 @@ p.subline { text-align: center; font-size: 14px; color: #9f9f9f; font-weight: 40
 .Advantages__advantage h4 { font-size: 20px; font-weight: 700; color: #fbfbfb; margin-bottom: 17px; }
 .Advantages__advantage p { font-size: 14px; font-weight: 300; color: #fbfbfb; line-height: 24px; width: 216px;}
 
-.Subscribe { background: #f2f2f2 url('footer/subscribe_background.jpg') no-repeat center; }
+.Subscribe { background: #f2f2f2 url('footer/subscribe_background.jpg') no-repeat center; background-size: 100%; }
 .Subscribe:before {content: ""; position: absolute; width: 100%; height: 438px; background: rgba(255,255,255,0.3);}
 .Subscribe__container { height: 100%; }
 
