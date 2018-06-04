@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>GeekBrains shop — Checkout</title>
+	<link rel="stylesheet" href="index.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato:300,400,400i,700,900" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body class="Page">
+
+<div class="Page__main">
+
+<header class="Page__wrap Header">
+	<div class="Page__container Header__container">
+
+		<div class="Header__left">
+			<div class="Logo">
+				<a href="/">
+					<img src="header/logo.png" alt="Логотип"> BRAN<span>D</span>
+				</a>
+			</div>
+			<div class="SearchForm">
+				<form action="#">
+					<button class="SearchForm__browse">Browse <i class="fa fa-caret-down"></i></button>
+					<input type="text" placeholder="Search for item...">
+					<button class="SearchForm__search"><i class="fa fa-search"></i></button>
+				</form>
+			</div>
+		</div>
+
+		<div class="CartWidget">
+			<img src="header/cart.png" alt="Корзина">
+			<a href="">My Account&nbsp;<i class="fa fa-caret-down"></i></a>
+		</div>
+
+	</div>
+</header>
+
+<nav class="Page__wrap MainMenu">
+	<div class="Page__container MainMenu__container">
+		<ul>
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Man</a></li>
+			<li><a href="#">Women</a></li>
+			<li><a href="#">Kids</a></li>
+			<li><a href="#">Accoseriese</a></li>
+			<li><a href="#">Featured</a></li>
+			<li><a href="#">Hot Deals</a></li>
+		</ul>
+	</div>
+</nav>
+
+</div>
+
+
+<div class="Page__wrap Page__wrap Headline">
+	<div class="Page__container Headline__container">
+		<h1>New Arrivals</h1>
+		<nav class="Breadcrumbs">
+			<a href="" class="Breadcrumbs__link">Home</a> /
+			<a href="" class="Breadcrumbs__link">Men</a> /
+			<a href="" class="Breadcrumbs__link Breadcrumbs__link_current">New arrivals</a>
+		</nav>
+	</div>
+</div>
+
+<div class="Page__wrap Page__wrap_white Checkout">
+	<div class="Page__container Checkout__container">
+		<form>
+			<details open>
+				<summary>01. SHIPPING ADDRESS</summary>
+				<div class="Checkout__step Checkout__step_shipping">
+					<div class="Checkout__column Checkout__column_left">
+						<h2>Check as a guest or register</h2>
+						<p>Register with us for future convenience</p>
+
+						<label><input type="radio" name="checkout">checkout as guest</label>
+						<label><input type="radio" name="checkout">register</label>
+
+						<h2>register and save time!</h2>
+						<p>Register with us for future convenience</p>
+						<ul>
+							<li><i class="fa fa-angle-double-right"></i> Fast and easy checkout</li>
+							<li><i class="fa fa-angle-double-right"></i> Easy access to your order history and status</li>
+						</ul>
+
+						<a href="#" class="Checkout__a_button">Continue</a>
+					</div>
+					<div class="Checkout__column Checkout__column_right">
+						<h2>Already registed?</h2>
+						<p>Please log in below</p>
+
+						<label>EMAIL ADDRESS<span>*</span></label>
+						<input type="email" required class="Checkout__input">
+						<label>PASSWORD<span>*</span></label>
+						<input type="password" required class="Checkout__input">
+						<p class="Checkout__required">* Required Fileds</p>
+						<a href="#" class="Checkout__a_button">Log in</a>
+						<a href="#" class="Checkout__a_string">Forgot Password ?</a>
+					</div>
+				</div>
+			</details>
+			<details>
+				<summary>02. BILLING INFORMATION</summary>
+				<div class="Checkout__step">Контент</div>
+			</details>
+			<details>
+				<summary>03. SHIPPING INFORMATION</summary>
+				<div class="Checkout__step">Контент</div>
+			</details>
+			<details>
+				<summary>04. SHIPPING METHOD</summary>
+				<div class="Checkout__step">Контент</div>
+			</details>
+			<details>
+				<summary>05. PAYMENT METHOD</summary>
+				<div class="Checkout__step">Контент</div>
+			</details>
+			<details>
+				<summary>06. ORDER REVIEW</summary>
+				<div class="Checkout__step">Контент</div>
+			</details>
+		</form>
+	</div>
+</div>
+
+
+<footer class="Page__down">
+
+<section class="Page__wrap Subscribe">
+	<div class="Page__container Subscribe__container">
+
+		<div class="Footer__Subscribe">
+
+			<div class="Subscribe__Recomendation">
+				<figure class="Recomendation__people">
+					<img src="footer/people1.png" alt="">
+					<div class="Recomendation__main">
+						<figcaption class="Recomendation__description">
+							“Vestibulum quis porttitor dui! Quisque viverra nunc mi, a pulvinar purus condimentum a. Aliquam condimentum mattis neque sed pretium”
+						</figcaption>
+						<div class="Recomendation__name">Bin Burhan<br><span>Dhaka, Bd</span></div>
+					</div>
+				</figure>
+				<div class="Recomendation__switches">
+					<div class="Recomendation__switch"></div>
+					<div class="Recomendation__switch Recomendation__switch_active"></div>
+					<div class="Recomendation__switch"></div>
+				</div>
+			</div>
+
+			<div class="Subcribe__form">
+				<h4>SUBSRIBE<br><span>FOR OUR NEWLETTER AND PROMOTION</span></h4>
+				<form>
+					<input type="email" placeholder="Enter Your Email"
+					><button type="submit">Subscribe</button>
+				</form>
+			</div>
+
+		</div>
+
+	</div>
+</section>
+
+<section class="Page__wrap FooterMenu">
+	<div class="Page__container FooterMenu__container">
+		<div class="FooterMenu__company">
+			<div class="Logo">
+				<a href="/">
+					<img src="header/logo.png" alt="Логотип"> BRAN<span>D</span>
+				</a>
+			</div>
+			<div class="FooterMenu__description">
+				Objectively transition extensive data rather than cross functional solutions. Monotonectally syndicate multidisciplinary materials before go forward benefits. Intrinsicly syndicate an expanded array of processes and cross-unit partnerships.<br><br>
+				Efficiently plagiarize 24/365 action items and focused infomediaries. Distinctively seize superior initiatives for wireless technologies. Dynamically optimize.
+			</div>
+		</div>
+		<nav class="FooterMenu__menu">
+			<h4>COMPANY</h4>
+			<ul>
+				<li><a href="">Home</a></li>
+				<li><a href="">Shop</a></li>
+				<li><a href="">About</a></li>
+				<li><a href="">How It Works</a></li>
+				<li><a href="">Contact</a></li>
+			</ul>
+		</nav>
+		<nav class="FooterMenu__menu">
+			<h4>INFORMATION</h4>
+			<ul>
+				<li><a href="">Tearms & Condition</a></li>
+				<li><a href="">Privacy Policy</a></li>
+				<li><a href="">How to Buy</a></li>
+				<li><a href="">How to Sell</a></li>
+				<li><a href="">Promotion</a></li>
+			</ul>
+		</nav>
+		<nav class="FooterMenu__menu">
+			<h4>SHOP CATEGORY</h4>
+			<ul>
+				<li><a href="">Men</a></li>
+				<li><a href="">Women</a></li>
+				<li><a href="">Child</a></li>
+				<li><a href="">Apparel</a></li>
+				<li><a href="">Brows All</a></li>
+			</ul>
+		</nav>
+	</div>
+</section>
+
+<nav class="Page__wrap FooterSubline">
+	<div class="Page__container FooterSubline__container">
+		<p class="FooterSubline__copyright">© 2017  Brand  All Rights Reserved.</p>
+		<div class="FooterSubline__social">
+			<a href=""><i class="fab fa-facebook-f"></i></a>
+			<a href=""><i class="fab fa-twitter"></i></a>
+			<a href="" class="FooterSubline__social_disabled"><i class="fab fa-linkedin-in"></i></a>
+			<a href=""><i class="fab fa-pinterest-p"></i></a>
+			<a href=""><i class="fab fa-google-plus-g"></i></a>
+		</div>
+	</div>
+</nav>
+
+</footer>
+
+</body>
+</html>

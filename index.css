@@ -6,6 +6,7 @@ p.subline { text-align: center; font-size: 14px; color: #9f9f9f; font-weight: 40
 
 .Page { font-family: Lato, Arial; display: flex; flex-direction: column; justify-content: space-between; }
 .Page__wrap { width: 100%; background: #FCFCFC; }
+.Page__wrap_white { background: #FFF; }
 .Page__container { width: 1140px; margin: 0 auto; }
 
 .Header { height: 100px; border-bottom: 1px solid #ececec; }
@@ -135,3 +136,43 @@ p.subline { text-align: center; font-size: 14px; color: #9f9f9f; font-weight: 40
 .FooterSubline__social a { display: flex; background: #FFF; width: 35px; height: 35px; margin-right: 5px; font-size: 16px; color: #b2b2b2; justify-content: center; align-items: center; text-decoration: none; }
 .FooterSubline__social a:hover { background: #f16d7f; color: #f7f7f8; }
 .FooterSubline__social_disabled { opacity: 0.5; }
+
+
+/* Checkout */
+
+.Headline { background: #f8f3f4; height: 148px; }
+.Headline__container { height: 100%; display: flex; justify-content: space-between; align-items: center; }
+.Headline__container h1 { text-transform: uppercase; color: #f16d7f; font-size: 24px; }
+
+.Breadcrumbs, .Breadcrumbs__link { text-transform: uppercase; font-size: 14px; color: #636363; }
+.Breadcrumbs__link { text-decoration: none; }
+.Breadcrumbs__link:hover { text-decoration: underline; }
+.Breadcrumbs__link_current { color: #f16d7f; }
+
+.Checkout__container { padding: 90px 0 90px 0;  }
+.Checkout__container details { border-bottom: 1px solid #e8e8e8; }
+.Checkout__container summary { font-size: 16px; font-weight: 700; margin: 33px 0; cursor: pointer; outline: none; }
+.Checkout__container summary::-webkit-details-marker { display: none; }
+
+.Checkout__column { width: 50%; }
+
+.Checkout__step { padding: 0 35px 80px 35px; display: flex; justify-content: space-between; }
+.Checkout__step h2 { font-size: 13px; font-weight: 700; text-align: left; text-transform: uppercase; margin-bottom: 15px; }
+.Checkout__step p { font-size: 13px; color: #b3b2b2; font-weight: 400; padding-bottom: 30px; }
+
+.Checkout__step_shipping label { display: block; text-transform: uppercase; font-weight: 700; font-size: 12px; margin-bottom: 20px; cursor: pointer; }
+.Checkout__step_shipping .Checkout__column_left label:first-child { margin-bottom: 34px; }
+.Checkout__step_shipping .Checkout__column_left label:last-child { margin-bottom: 33px; }
+.Checkout__step_shipping label input { margin-right: 14px; }
+.Checkout__step_shipping label span { color: #ff0d0d; }
+
+.Checkout__step_shipping ul {  }
+.Checkout__step_shipping li { list-style-type: none; text-decoration: none; font-size: 13px; color: #b3b2b2; font-weight: 400; margin-bottom: 15px; }
+.Checkout__step_shipping li:last-child { margin-bottom: 57px; }
+
+.Checkout__a_button { border: 1px solid #eaeaea; padding: 19px 53px; text-decoration: none; font-size: 14px; font-weight: 700; color: #4a4a4a; text-transform: uppercase; }
+.Checkout__a_string { font-size: 14px; color: #222; text-decoration: none; }
+.Checkout__column_right label { margin-bottom: 16px; }
+.Checkout__input { width: 390px; height: 45px; border: 1px solid #eaeaea; margin-bottom: 23px; }
+.Checkout__required { color: #ff0d0d!important; }
+.Checkout__column_right .Checkout__a_string { margin-left: 32px; }
