@@ -1,0 +1,161 @@
+.Slider
+	height: 614px
+	background: #e8e8e8
+	&__container
+		height: 100%
+		background: #e8e8e8 url('home/slider.jpg') -225px -51px
+		position: relative
+	&__text
+		font-size: 60px
+		text-transform: uppercase
+		font-weight: 900
+		color: #222
+		border-left: 12px solid #f16d7f
+		padding-left: 12px
+		top: 185px
+		position: absolute
+		span
+			font-size: 40px
+			span
+				color: #f16d7f
+
+.Banners
+	padding: 98px 0
+	width: 100%
+	&__container
+		display: flex
+		justify-content: space-between
+		height: 100%
+	&__banner
+		margin-bottom: 16px
+		position: relative
+	&__sticker
+		background: #FFF
+		position: absolute
+		padding: 16px 19px
+		left: 0
+		top: 26px
+		color: #222
+		font-size: 18px
+		font-weight: 900
+		span
+			color: #f16d7f
+			font-size: 30px
+			font-weight: 900
+
+.Items
+	&__list
+		margin: 60px 0
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&__item
+		width: 263px
+		height: 364px
+		margin-bottom: 39px
+		position: relative
+		&:hover
+			box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.16)
+			.Items__add2cart
+				visibility: visible
+		a
+			text-transform: uppercase
+			text-decoration: none
+	&__img
+		margin-bottom: 12px
+	&__name
+		color: #222
+		font-size: 13px
+		font-weight: 400
+		margin: 0 0 12px 15px
+	&__price
+		color: #f16d7f
+		font-size: 16px
+		font-weight: 700
+		margin: 0 0 12px 15px
+	&__add2cart
+		background: rgba(58, 56, 56, 0.83)
+		position: absolute
+		top: 0
+		left: 0
+		width: 263px
+		height: 281px
+		z-index: 5
+		visibility: hidden
+		display: flex
+		justify-content: center
+		align-items: center
+		z-index: 9999
+		button
+			border: 1px solid #FFF
+			background: none
+			color: #fff
+			font-size: 13px
+			font-weight: 700
+			width: 123px
+			height: 39px
+			display: flex
+			align-items: center
+			justify-content: center
+			font-family: Lato, Arial
+			cursor: pointer
+			img
+				color: #fff
+				width: 23px
+				height: 22px
+				margin-right: 3px
+	&__link
+		display: block
+		width: 212px
+		padding: 14px 0
+		margin: 0 auto
+		background: #f16d7f
+		color: #fff
+		font-size: 16px
+		font-weight: 400
+		text-decoration: none
+		text-align: center
+		&:hover
+			background: #f98797
+
+.Advantages
+	padding: 113px 0 97px 0
+	&__container
+		background: #222224
+		display: flex
+		justify-content: space-between
+	&__banner
+		position: relative
+		&:before
+			content: ""
+			position: absolute
+			width: 100%
+			height: 100%
+			background: rgba(0,0,0,0.2)
+	&__sticker
+		position: absolute
+		top: 146px
+		left: 39px
+		font-size: 54px
+		font-weight: 700
+		color: #FFF
+		span
+			color: #f16d7f
+	&__advantage
+		display: flex
+		justify-content: space-between
+		align-items: flex-start
+		margin: 48px 43px 0 36px
+		img
+			margin-right: 33px
+		h4
+			font-size: 20px
+			font-weight: 700
+			color: #fbfbfb
+			margin-bottom: 17px
+		p
+			font-size: 14px
+			font-weight: 300
+			color: #fbfbfb
+			line-height: 24px
+			width: 216px

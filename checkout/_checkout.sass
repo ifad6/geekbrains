@@ -1,0 +1,81 @@
+.Checkout
+	&__container
+		padding: 90px 0 90px 0
+		details
+			border-bottom: 1px solid #e8e8e8
+		summary
+			font-size: 16px
+			font-weight: 700
+			margin: 33px 0
+			cursor: pointer
+			outline: none
+			&::-webkit-details-marker
+				display: none
+	&__column
+		width: 50%
+	&__step
+		padding: 0 35px 80px 35px
+		display: flex
+		justify-content: space-between
+		h2
+			font-size: 13px
+			font-weight: 700
+			text-align: left
+			text-transform: uppercase
+			margin-bottom: 15px
+		p
+			font-size: 13px
+			color: #b3b2b2
+			font-weight: 400
+			padding-bottom: 30px
+		&_shipping
+			label
+				display: block
+				text-transform: uppercase
+				font-weight: 700
+				font-size: 12px
+				margin-bottom: 20px
+				cursor: pointer
+				input
+					margin-right: 14px
+				span
+					color: #ff0d0d
+			.Checkout__column_left
+				label:first-child
+					margin-bottom: 34px
+				label:last-child
+					margin-bottom: 33px
+			li
+				list-style-type: none
+				text-decoration: none
+				font-size: 13px
+				color: #b3b2b2
+				font-weight: 400
+				margin-bottom: 15px
+				&:last-child
+					margin-bottom: 57px
+	&__a_button
+		border: 1px solid #eaeaea
+		padding: 19px 53px
+		text-decoration: none
+		font-size: 14px
+		font-weight: 700
+		color: #4a4a4a
+		text-transform: uppercase
+	&__a_string
+		font-size: 14px
+		color: #222
+		text-decoration: none
+	&__column_right label
+		margin-bottom: 16px
+		.Checkout__a_string
+			margin-left: 32px
+	&__input
+		width: 370px
+		height: 45px
+		border: 1px solid #eaeaea
+		margin-bottom: 23px
+		font-size: 21px
+		padding: 0 10px
+	&__required
+		color: #ff0d0d!important

@@ -1,0 +1,131 @@
+.Header
+	height: 100px
+	border-bottom: 1px solid #ececec
+	&__container
+		height: 100%
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__left
+		display: flex
+		align-items: center
+
+.Logo
+	margin-right: 39px
+	a
+		color: #222
+		font-size: 27px
+		text-decoration: none
+		display: flex
+		align-items: center
+		span
+			color: #f16d7f
+			font-weight: 900
+	img
+		margin-right: 13px
+
+.SearchForm
+	form
+		white-space: nowrap
+	&__browse
+		width: 87px
+		height: 38px
+		border-radius: 3px 0 0 3px
+		border: 1px solid #e6e6e6
+		cursor: pointer
+		color: #222
+		font-size: 14px
+		outline: none
+		background: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%)
+		i
+			color: #838383
+	input
+		width: 260px
+		height: 38px
+		border: 1px solid #e6e6e6
+		background: #FCFCFC
+		padding: 0 17px
+		margin-left: -10px
+		outline: none
+	&__search
+		width: 38px
+		height: 38px
+		border: 0 none
+		border-radius: 0 3px 3px 0
+		border: 1px solid #e6e6e6
+		background: #FCFCFC
+		color: #a4a4a4
+		margin-left: -15px
+		outline: none
+		&:hover
+			background: linear-gradient(180deg, #f9f9f9 0%, #f5f5f5 100%)
+			cursor: pointer
+
+.CartWidget
+	display: flex
+	align-items: center
+	img
+		margin-right: 26px
+	a
+		display: flex
+		text-decoration: none
+		background: #f16d7f
+		width: 130px
+		height: 38px
+		color: #FFF
+		font-size: 15px
+		justify-content: center
+		align-items: center
+		&:hover
+			background: #f98797
+			cursor: pointer
+
+.MainMenu
+	&__container
+		height: 50px
+		display: flex
+		align-items: center
+		ul
+			width: 680px
+			margin: 0 auto
+			display: flex
+			justify-content: space-between
+		li
+			list-style-type: none
+		a
+			font-size: 14px
+			padding: 16px 0
+			font-weight: 700
+			color: #222
+			text-decoration: none
+			text-transform: uppercase
+			&:hover
+				text-decoration: underline
+
+.Headline
+	background: #f8f3f4
+	height: 148px
+	&__container
+		height: 100%
+		display: flex
+		justify-content: space-between
+		align-items: center
+		h1
+			text-transform: uppercase
+			color: #f16d7f
+			font-size: 24px
+
+
+%breadcrumbs
+	text-transform: uppercase
+	font-size: 14px
+	color: #636363
+.Breadcrumbs
+	@extend %breadcrumbs
+	&__link
+		@extend %breadcrumbs
+		text-decoration: none
+		&:hover
+			text-decoration: underline
+		&_current
+			color: #f16d7f

@@ -1,0 +1,96 @@
+.Footer__Subscribe
+	height: 438px
+	display: flex
+	justify-content: space-between
+
+.Subscribe
+	background: #f2f2f2 url('footer/subscribe_background.jpg') no-repeat center
+	background-size: 100%
+	&:before
+		content: ""
+		position: absolute
+		width: 100%
+		height: 438px
+		background: rgba(255,255,255,0.3)
+	&__container
+		height: 100%
+	&__form
+		width: 50%
+		height: 100%
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		z-index: 10
+		h4
+			font-size: 24px
+			font-weight: 400
+			text-align: center
+			line-height: 24px
+			margin-bottom: 35px
+			span
+				font-size: 14px
+		input
+			width: 211px
+			height: 46px
+			padding-left: 23px
+			background: #e1e1e1
+			border: 0 none
+			border-radius: 23px 0 0 23px
+			outline: none
+		button
+			width: 104px
+			height: 46px
+			background: #f16d7f
+			border: 0 none
+			border-radius: 0 23px 23px 0
+			color: #FFF
+			font-size: 14px
+			outline: none
+			&:hover
+				background: #f98797
+				cursor: pointer
+	&__Recomendation
+		width: 50%
+		height: 100%
+		border-right: 1px solid #FFF
+		display: flex
+		align-items: center
+		flex-direction: column
+		z-index: 10
+
+.Recomendation
+	&__people
+		display: flex
+		justify-content: space-between
+		width: 499px
+		margin-top: 111px
+		align-items: flex-start
+		margin-bottom: 39px
+		img
+			border-radius: 44px
+			margin-right: 27px
+	&__description
+		font-size: 16px
+		font-style: italic
+		margin: 14px 0 19px 0
+	&__name
+		font-size: 16px
+		font-weight: 700
+		color: #f16d7f
+		span
+			font-size: 12px
+			font-weight: 300
+			color: #222224
+	&__switches
+		display: flex
+		justify-content: flex-start
+		margin-left: -120px
+	&__switch
+		width: 41px
+		height: 7px
+		cursor: pointer
+		background: #d6d6d6
+		margin-right: 10px
+		&_active
+			background: #f16d7f
