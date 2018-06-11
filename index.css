@@ -540,6 +540,7 @@ p.subline {
         text-align: right; }
     .Cart__table__buttons a {
       padding: 20px 38px;
+      line-height: 58px;
       color: #4a4a4a;
       font-size: 14px;
       font-weight: 700;
