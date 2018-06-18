@@ -1,0 +1,22 @@
+<meta charset="utf-8">
+<script>
+	"use strict";
+
+	let ticketNumber = +prompt('Введите шестизначный номер билета:');
+
+	if (isNaN(ticketNumber) || ticketNumber.toString().length !== 6)
+	{
+		alert('Введён некорректный номер');
+	}
+	else
+	{
+		let part1 = (Math.round(ticketNumber / 1000)).toString();
+		let part2 = (ticketNumber % 1000).toString();
+
+		let sum1 = +part1[0] + +part1[1] + +part1[2];
+		let sum2 = +part2[0] + +part2[1] + +part2[2];
+
+		if (sum1 === sum2) alert('Билет счастливый!');
+		else alert ('Билет обычный');
+	}
+</script>
