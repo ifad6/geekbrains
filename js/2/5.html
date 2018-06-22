@@ -1,0 +1,42 @@
+<meta charset="utf-8">
+<script>
+	"use strict";
+
+	const a = 5, b = 2;
+
+	function getSum(a, b) {
+		return a + b;
+	}
+
+	function getDiff(a, b) {
+		return a - b;
+	}
+
+	function getMult(a, b) {
+		return a * b;
+	}
+
+	function getDiv(a, b) {
+		return Math.round(a / b);
+	}
+
+	function mathOperation(a, b, operation) {
+		switch (operation) {
+			case 'sum':
+				return getSum(a, b);
+			case 'diff':
+				return getDiff(a, b);
+			case 'mult':
+				return getMult(a, b);
+			case 'div':
+				return getDiv(a, b);
+			default:
+				return false;
+		}
+	}
+
+	console.log(mathOperation(a, b, 'sum'));
+	console.log(mathOperation(a, b, 'diff'));
+	console.log(mathOperation(a, b, 'mult'));
+	console.log(mathOperation(a, b, 'div'));
+</script>

@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<script>
+	"use strict";
+
+	const num = +prompt('Сколько денег вы хотите положить в банк?');
+
+	if (isNaN(num) || num <= 0) {
+		alert('Сумма некорректная');
+	}
+	else {
+		alert(rouble(num));
+	}
+
+	function rouble(num) {
+		let str;
+		const last1 = num % 10;
+		const last2 = num % 100;
+
+		if (last2 >= 11 && last2 <= 14) {
+			str = 'рублей';
+		}
+		else if (last1 == 1) {
+			str = 'рубль';
+		}
+		else if (last1 > 1 && last1 < 5) {
+			str = 'рубля';
+		}
+		else {
+			str = 'рублей';
+		}
+
+		return `${num} ${str}`;
+	}
+</script>
