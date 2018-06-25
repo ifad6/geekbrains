@@ -1,0 +1,40 @@
+<meta charset="utf-8">
+<script>
+	"use strict";
+
+	const arr = [
+		[2, 4, 6],
+		[1, 5, 10],
+		[7, 4, 1],
+	];
+
+
+	let maxArrNum, maxArrSum;
+
+	for (const key in arr) {
+
+		let sum = 0;
+
+		for (const val of arr[key]) {
+			sum += val;
+		}
+
+		if (!maxArrNum || maxArrSum < sum) {
+			maxArrSum = sum;
+			maxArrNum = key;
+		}
+	}
+
+
+	let minVal;
+
+	for (const val of arr[maxArrNum]) {
+		if (!minVal || minVal > val) {
+			minVal = val;
+		}
+	}
+
+
+	console.log(`Массив с максимальной суммой чисел — ${maxArrNum}`);
+	console.log(`Минимальное число в этом массиве — ${minVal}`);
+</script>
