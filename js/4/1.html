@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<script>
+	"use strict";
+
+	const number = +prompt('Введите число от 1 до 999');
+	console.log(numberToObject(number));
+
+	/**
+	 * Функция принимает на вход число от 1 до 999 и возвращает объект, в котором число разбито по разрядам
+	 * @param {int} number - Входящее число
+	 * @return {object} Объект с результатами
+	 */
+	function numberToObject(number)	{
+		if (isNaN(number) || number < 1 || number > 999) {
+			console.error('Вы ввели некорректное значение');
+			return {};
+		}
+
+		const hundreds = parseInt(number / 100);
+		const tens = parseInt((number - hundreds * 100) / 10);
+		const ones = number - hundreds * 100 - tens * 10;
+
+		/**
+    	 * Объект с результатами
+   		 * @property {int} thirdtigit сотни
+    	 * @property {int} secondtigit единицы
+    	 * @property {int} frsttigit десятки
+    	 */
+		return {
+			thirdtigit: hundreds,
+			secondtigit: tens,
+			frsttigit: ones
+		}
+	}
+</script>
