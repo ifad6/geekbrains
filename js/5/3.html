@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<form>
+	<table>
+		<tr><td>Имя</td><td><input type="text" id="name"><br><span id="nameError"></span></td></tr>
+		<tr><td>Телефон</td><td><input type="text" id="phone"><br><span id="phoneError"></span></td></tr>
+		<tr><td>Пароль</td><td><input type="password" id="pass"><br><span id="passError"></span></td></tr>
+		<tr><td>Повтор пароля</td><td><input type="password" id="repass"><br><span id="repassError"></span></td></tr>
+	</table>
+	<input type="submit">
+</form>
+
+<script>
+	"use strict";
+
+	const form = document.querySelector('form');
+	form.addEventListener('submit', function(e){
+
+		const name = document.querySelector('#name');
+		if (name.value.length < 1 || name.value.length > 50) {
+			e.preventDefault();
+			name.style.borderColor = 'red';
+			document.querySelector('#nameError').innerHTML = 'Имя должно содержать от 1 до 50 символов';
+		}
+
+		const phone = document.querySelector('#phone');
+		if(!/^[0-9]{11}$/.test(phone.value)) {
+			e.preventDefault();
+			phone.style.borderColor = 'red';
+			document.querySelector('#phoneError').innerHTML = 'Телефон должен содержать 11 цифр';
+		}
+
+		const pass = document.querySelector('#pass');
+		if (pass.value.length < 5 || pass.value.length > 50) {
+			e.preventDefault();
+			pass.style.borderColor = 'red';
+			document.querySelector('#passError').innerHTML = 'Пароль должен содержать от 5 до 50 символов';
+		}
+
+		const repass = document.querySelector('#repass');
+		if (pass.value.length > 1 && repass.value !== pass.value) {
+			e.preventDefault();
+			repass.style.borderColor = 'red';
+			document.querySelector('#repassError').innerHTML = 'Пароли не совпадают';
+		}
+
+		
+	});
+
+function errorValidate(field) {
+	e.preventDefault();
+}
+</script>
+
+</body>
+</html>

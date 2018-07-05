@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+</head>
+<body>
+
+<style>
+	#checkerboard {
+		border-spacing: 0;
+		border-collapse: collapse;
+	}
+	#checkerboard td {
+		width: 40px;
+		height: 40px;
+		border: 1px solid #CCC;
+		padding: 0;
+		text-align: center;
+	}
+	#checkerboard td.head {
+		border: 0 none;
+	}
+	.figure_black, .figure_white {
+		display: inline-block;
+		border: 2px solid #4a4949;
+		border-radius: 30px;
+		width: 18px;
+		height: 18px;
+		padding: 3px;
+	}
+	.figure_black {
+		background: #000;
+		color: #FFF;
+	}
+	.figure_white {
+		background: #FFF;
+		color: #000;
+	}
+</style>
+
+<table id="checkerboard"></table>
+
+<script src="1-2.js"></script>
+
+</body>
+</html>
