@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+
+<form>
+	<table>
+		<tr>
+			<td>Имя</td>
+			<td><input type="text" id="name" data-mask="^[a-zа-я]+$" value="Василий"></td>
+		</tr>
+		<tr>
+			<td>Телефон</td>
+			<td><input type="text" id="phone" data-mask="^\+\d\(\d{3}\)\d{3}\-\d{4}$" value="+7(000)000-0000"></td>
+		</tr>
+		<tr>
+			<td>E-mail</td>
+			<td><input type="text" id="email" data-mask="^[a-z0-9.-]+@[a-z0-9]+\.ru$" value="my.ma-il@mail.ru"></td>
+		</tr>
+		<tr>
+			<td>Текст</td>
+			<td><input type="text" id="text" data-mask=".+" value="Текст"></td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<button type="submit">Отправить</button>
+			</td>
+		</tr>
+	</table>
+</form>
+
+<script src="index.js"></script>
+
+</body>
+</html>
